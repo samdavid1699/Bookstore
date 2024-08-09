@@ -12,6 +12,10 @@ import java.util.Optional;
 public class BookController {
 @Autowired
     private BookService service;
+    @GetMapping("/")
+    public String getbook(){
+    return "The LINK IS PROPERLY WORKING";
+    }
 
     @RequestMapping(value="/books")
     public List<Book> getBook(){
